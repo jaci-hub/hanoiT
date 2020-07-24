@@ -1,0 +1,49 @@
+.container{
+    text-align: center;
+}
+.hanoit{
+    border: solid 1px black;
+    width: 50%;
+    height: 500px;
+    margin: auto;
+}
+.pegs{
+    border: solid 1px orangered;
+    display: inline-flex;
+    bottom: 0px;
+}
+.peg{
+    background-color: burlywood;
+    width: 5px;
+    height: 200px;
+    margin: 100px;
+}
+
+.pos{
+    margin-left: -60px;
+    width: 120px;
+    height: 40px;
+    border: solid 1px green;
+}
+.discs{
+    border: solid 1px blue;
+    width: 200px;
+    justify-content: center;
+    margin: auto;
+}
+.d{
+    margin: auto;
+    background-color: brown;
+    height: 40px;
+    border: solid 1px black;
+    z-index: 1;
+}
+#d1{
+    width: 70px;
+}
+#d2{
+    width: 100px;
+}
+#d3{
+    width: 130px;
+}

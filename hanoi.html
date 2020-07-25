@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Stylesheet" type="text/css" href="hanoi.css" />
+    <link rel="Stylesheet" type="text/js" href="hanoi.js" />
     <title>hanoi tower</title>
+    <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
 </head>
 <body>
     <div class="container">
@@ -13,28 +17,43 @@
             <div class="pegs">
                 <!--pegs -->
                 <div id="peg1" class="peg">
-                    <div id="pos1" class="pos"></div>
-                    <div id="pos2" class="pos"></div>
-                    <div id="pos3" class="pos"></div>
+                    <div class="pegcont">
+                        <div id="pos1" class="pos">
+                            <div id="d1" class="d">1</div>
+                        </div>
+                        <div id="pos2" class="pos">
+                            <div id="d2" class="d">2</div>
+                        </div>
+                        <div id="pos3" class="pos">
+                            <div id="d3" class="d">3</div>
+                        </div>
+                    </div>
                 </div>
                 <div id="peg2" class="peg">
-                    <div id="pos4" class="pos"></div>
-                    <div id="pos5" class="pos"></div>
-                    <div id="pos6" class="pos"></div>
+                    <div class="pegcont">
+                        <div id="pos4" class="pos"></div>
+                        <div id="pos5" class="pos"></div>
+                        <div id="pos6" class="pos"></div>
+                    </div>
                 </div>
                 <div id="peg3" class="peg">
-                    <div id="pos7" class="pos"></div>
-                    <div id="pos8" class="pos"></div>
-                    <div id="pos9" class="pos"></div>
+                    <div class="pegcont">
+                        <div id="pos7" class="pos"></div>
+                        <div id="pos8" class="pos"></div>
+                        <div id="pos9" class="pos"></div>
+                    </div>
                 </div>
-            </div>
-            <!--disks -->
-            <div class="discs">
-                <div id="d1" class="d">1</div>
-                <div id="d2" class="d">2</div>
-                <div id="d3" class="d">3</div>
             </div>
         </div>
     </div>
 </body>
+<script src="jquery.js"></script>
+<script src="jqueryui/jquery-ui.js"></script>
+<script>
+    $(".d").draggable({
+        containment: ".hanoit",
+       // snap: true, //it will stick/snap the objects together
+        //snapTolerance: 20 //the distance for the the snap to happen
+    });
+</script>
 </html>

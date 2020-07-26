@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
+//Just to check
 char pos[] = {' ', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
 int x, y;
 void towers()
